@@ -1,0 +1,19 @@
+{
+    "id": "703c5924-3cd1-46dc-ad4b-85e9e855d691",
+    "version": "1.0.0",
+    "platform": "all",
+    "arch": "all",
+    "name": "Code Editor",
+    "logo": "/logo.png",
+    "keywords": [
+
+    ],
+    "devTools": true,
+    "preview": {
+        "py,rs,java": {
+            "viewer": {
+                "path": "src/viewer.html"
+            }
+        }
+    }
+}
