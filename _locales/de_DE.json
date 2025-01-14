@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "Code-Editor"
+		}
+	},
+	"app": {
+		"createJsFile": "JavaScript-Datei erstellen",
+        "createPyFile": "Python-Datei erstellen",
+        "createRustFile": "Rust-Datei erstellen",
+        "createJavaFile": "Java-Datei erstellen",
+        "createCodeSpace": "Codespace erstellen",
+        "createCodeSpaceTooltip": "Eine neue leere Codespace-Datei erstellen",
+        "importHardCodespace": "Harten Codespace importieren",
+        "importHardCodespaceTooltip": "Ein Codeprojekt in eagle importieren",
+        "importSoftCodespace": "Weichen Codespace importieren",
+        "importSoftCodespaceTooltip": "Eine Verknüpfung zu einem Codespace erstellen"
+	}
+} 

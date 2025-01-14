@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "코드 편집기"
+		}
+	},
+	"app": {
+		"createJsFile": "JavaScript 파일 만들기",
+        "createPyFile": "Python 파일 만들기",
+        "createRustFile": "Rust 파일 만들기",
+        "createJavaFile": "Java 파일 만들기",
+        "createCodeSpace": "코드 공간 만들기",
+        "createCodeSpaceTooltip": "새로운 빈 코드 공간 파일 만들기",
+        "importHardCodespace": "하드 코드 공간 가져오기",
+        "importHardCodespaceTooltip": "코드 프로젝트를 eagle에 가져오기",
+        "importSoftCodespace": "소프트 코드 공간 가져오기",
+        "importSoftCodespaceTooltip": "코드 공간에 대한 바로 가기 만들기"
+	}
+} 

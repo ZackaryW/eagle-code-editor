@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "Редактор кода"
+		}
+	},
+	"app": {
+		"createJsFile": "Создать файл JavaScript",
+        "createPyFile": "Создать файл Python",
+        "createRustFile": "Создать файл Rust",
+        "createJavaFile": "Создать файл Java",
+        "createCodeSpace": "Создать кодовое пространство",
+        "createCodeSpaceTooltip": "Создать новый пустой файл кодового пространства",
+        "importHardCodespace": "Импортировать жесткое кодовое пространство",
+        "importHardCodespaceTooltip": "Импортировать проект кода в eagle",
+        "importSoftCodespace": "Импортировать мягкое кодовое пространство",
+        "importSoftCodespaceTooltip": "Создать ярлык для кодового пространства"
+	}
+} 

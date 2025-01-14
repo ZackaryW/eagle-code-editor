@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "Code Editor"
+		}
+	},
+	"app": {
+		"createJsFile": "Create JavaScript File",
+        "createPyFile": "Create Python File",
+        "createRustFile": "Create Rust File",
+        "createJavaFile": "Create Java File",
+        "createCodeSpace": "Create Codespace",
+        "createCodeSpaceTooltip": "Create a new blank codespace file",
+        "importHardCodespace": "Import Hard Codespace",
+        "importHardCodespaceTooltip": "Import a code project to eagle",
+        "importSoftCodespace": "Import Soft Codespace",
+        "importSoftCodespaceTooltip": "Create a shortcut to a codespace"
+	}
+}

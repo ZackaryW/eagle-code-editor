@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "代码编辑器"
+		}
+	},
+	"app": {
+		"createJsFile": "创建 JavaScript 文件",
+        "createPyFile": "创建 Python 文件",
+        "createRustFile": "创建 Rust 文件",
+        "createJavaFile": "创建 Java 文件",
+        "createCodeSpace": "创建代码空间",
+        "createCodeSpaceTooltip": "创建一个新的空白代码空间文件",
+        "importHardCodespace": "导入硬代码空间",
+        "importHardCodespaceTooltip": "将代码项目导入 eagle",
+        "importSoftCodespace": "导入软代码空间",
+        "importSoftCodespaceTooltip": "创建代码空间的快捷方式"
+	}
+} 

@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "コードエディタ"
+		}
+	},
+	"app": {
+		"createJsFile": "JavaScriptファイルを作成",
+        "createPyFile": "Pythonファイルを作成",
+        "createRustFile": "Rustファイルを作成",
+        "createJavaFile": "Javaファイルを作成",
+        "createCodeSpace": "コードスペースを作成",
+        "createCodeSpaceTooltip": "新しい空のコードスペースファイルを作成",
+        "importHardCodespace": "ハードコードスペースをインポート",
+        "importHardCodespaceTooltip": "コードプロジェクトをeagleにインポート",
+        "importSoftCodespace": "ソフトコードスペースをインポート",
+        "importSoftCodespaceTooltip": "コードスペースへのショートカットを作成"
+	}
+} 

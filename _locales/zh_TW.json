@@ -1,0 +1,19 @@
+{
+	"manifest": {
+		"app": {
+			"name": "代碼編輯器"
+		}
+	},
+	"app": {
+		"createJsFile": "創建 JavaScript 文件",
+        "createPyFile": "創建 Python 文件",
+        "createRustFile": "創建 Rust 文件",
+        "createJavaFile": "創建 Java 文件",
+        "createCodeSpace": "創建代碼空間",
+        "createCodeSpaceTooltip": "創建一個新的空白代碼空間文件",
+        "importHardCodespace": "導入硬代碼空間",
+        "importHardCodespaceTooltip": "將代碼項目導入 eagle",
+        "importSoftCodespace": "導入軟代碼空間",
+        "importSoftCodespaceTooltip": "創建代碼空間的快捷方式"
+	}
+} 
