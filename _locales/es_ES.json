@@ -5,10 +5,7 @@
 		}
 	},
 	"app": {
-		"createJsFile": "Crear archivo JavaScript",
-        "createPyFile": "Crear archivo Python",
-        "createRustFile": "Crear archivo Rust",
-        "createJavaFile": "Crear archivo Java",
+
         "createCodeSpace": "Crear espacio de código",
         "createCodeSpaceTooltip": "Crear un nuevo archivo de espacio de código en blanco",
         "importHardCodespace": "Importar espacio de código duro",

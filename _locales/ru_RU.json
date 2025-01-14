@@ -5,10 +5,6 @@
 		}
 	},
 	"app": {
-		"createJsFile": "Создать файл JavaScript",
-        "createPyFile": "Создать файл Python",
-        "createRustFile": "Создать файл Rust",
-        "createJavaFile": "Создать файл Java",
         "createCodeSpace": "Создать кодовое пространство",
         "createCodeSpaceTooltip": "Создать новый пустой файл кодового пространства",
         "importHardCodespace": "Импортировать жесткое кодовое пространство",

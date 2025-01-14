@@ -5,10 +5,6 @@
 		}
 	},
 	"app": {
-		"createJsFile": "JavaScript 파일 만들기",
-        "createPyFile": "Python 파일 만들기",
-        "createRustFile": "Rust 파일 만들기",
-        "createJavaFile": "Java 파일 만들기",
         "createCodeSpace": "코드 공간 만들기",
         "createCodeSpaceTooltip": "새로운 빈 코드 공간 파일 만들기",
         "importHardCodespace": "하드 코드 공간 가져오기",
