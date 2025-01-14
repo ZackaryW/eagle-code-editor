@@ -4,6 +4,18 @@ const os = require('os');
 
 eagle.onPluginCreate(async (plugin) => {
 	console.log("eagle.onPluginCreate");
+    // Overload button text with translations from en.json
+    document.getElementById('create-js').innerText = i18next.t('app.createJsFile');
+    document.getElementById('create-py').innerText = i18next.t('app.createPyFile');
+    document.getElementById('create-java').innerText = i18next.t('app.createJavaFile');
+    document.getElementById('create-rs').innerText = i18next.t('app.createRustFile');
+    document.getElementById('create-codespace').innerText = i18next.t('app.createCodeSpace');
+    document.getElementById('import-hard-codespace').innerText = i18next.t('app.importHardCodespace');
+    document.getElementById('import-soft-codespace').innerText = i18next.t('app.importSoftCodespace');
+    // add tooltips
+    //importHardCodespaceTooltip
+    document.getElementById('import-hard-codespace').title = i18next.t('app.importHardCodespaceTooltip');
+    document.getElementById('import-soft-codespace').title = i18next.t('app.importSoftCodespaceTooltip');
 	updateTheme();
 	
 });
