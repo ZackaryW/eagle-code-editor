@@ -5,10 +5,6 @@ const os = require('os');
 eagle.onPluginCreate(async (plugin) => {
 	console.log("eagle.onPluginCreate");
     // Overload button text with translations from en.json
-    document.getElementById('create-js').innerText = i18next.t('app.createJsFile');
-    document.getElementById('create-py').innerText = i18next.t('app.createPyFile');
-    document.getElementById('create-java').innerText = i18next.t('app.createJavaFile');
-    document.getElementById('create-rs').innerText = i18next.t('app.createRustFile');
     document.getElementById('create-codespace').innerText = i18next.t('app.createCodeSpace');
     document.getElementById('import-hard-codespace').innerText = i18next.t('app.importHardCodespace');
     document.getElementById('import-soft-codespace').innerText = i18next.t('app.importSoftCodespace');
@@ -53,6 +49,26 @@ document.getElementById("create-java").addEventListener("click", async () => {
 
 document.getElementById("create-rs").addEventListener("click", async () => {
     await createFile("unnamed.rs");
+});
+
+document.getElementById("create-xml").addEventListener("click", async () => {
+    await createFile("unnamed.xml");
+});
+
+document.getElementById("create-yaml").addEventListener("click", async () => {
+    await createFile("unnamed.yaml");
+});
+
+document.getElementById("create-sql").addEventListener("click", async () => {
+    await createFile("unnamed.sql");
+});
+
+document.getElementById("create-css").addEventListener("click", async () => {
+    await createFile("unnamed.css");
+});
+
+document.getElementById("create-json").addEventListener("click", async () => {
+    await createFile("unnamed.json");
 });
 
 const codespaceFile = path.join(path.dirname(eagle.plugin.path), "templates", "template.code-workspace");
