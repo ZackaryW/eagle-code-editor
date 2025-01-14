@@ -17,9 +17,11 @@ This plugin integrates the CodeMirror editor into Eagle.
 
 
 ## Features
-1. **Code editor**: ![Code Editor](/docs-asset/image.png)
+1. **Code editor**: 
+![Code Editor](/docs-asset/image.png)
 
-2. **Window Menu**: ![Window Menu](/docs-asset/wnd.png)
+2. **Window Menu**: 
+![Window Menu](/docs-asset/wnd.png)
 
 3. **Create File**: This feature allows you to create a new file of a specific type (Python, Rust, Java, or JavaScript) by clicking on the respective button.
 
