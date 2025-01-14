@@ -10,10 +10,13 @@
     ],
     "devTools": true,
     "preview": {
-        "py,rs,java": {
+        "py,rs,java,js": {
             "viewer": {
                 "path": "src/viewer.html"
             }
         }
-    }
+	},
+	"main": {
+		"url": "src/window.html"
+	}
 }

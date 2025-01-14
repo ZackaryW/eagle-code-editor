@@ -122,31 +122,6 @@ a {
 	color: var(--color-text-secondary);
 }
 
-.field-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.field-input-container {
-    margin-bottom: 10px;
-}
-
-.field-label {
-    min-width: 100px;
-}
-
-.field-input {
-    flex: 1;
-    padding: 5px;
-}
-
-.add-field-btn, .remove-field-btn {
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.add-field-btn {
-    margin-top: 10px;
+#editor {
+	background-color: white;
 }
