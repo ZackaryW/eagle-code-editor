@@ -17,7 +17,7 @@
 	"languages": ["en", "zh_TW", "zh_CN", "ja_JP", "es_ES", "ru_RU", "de_DE", "ko_KR"],
     "devTools": true,
     "preview": {
-        "py,rs,java,js": {
+        "py,rs,java,js,css,sql,xml,yaml,json,yml,ts": {
             "viewer": {
                 "path": "src/viewer.html"
             }

@@ -15,9 +15,29 @@ async function loadEditor(filePath) {
 			const rust = require("@codemirror/lang-rust");
 			languageExtension = rust.rust();
 			break;
-		case "js":
+		case "js" || "ts":
 			const javascript = require("@codemirror/lang-javascript");
 			languageExtension = javascript.javascript();
+			break;
+		case "json":
+			const json = require("@codemirror/lang-json");
+			languageExtension = json.json();
+			break;
+		case "sql":
+			const sql = require("@codemirror/lang-sql");
+			languageExtension = sql.sql();
+			break;
+		case "xml":
+			const xml = require("@codemirror/lang-xml");
+			languageExtension = xml.xml();
+			break;
+		case "yaml" || "yml":
+			const yaml = require("@codemirror/lang-yaml");
+			languageExtension = yaml.yaml();
+			break;
+		case "css":
+			const css = require("@codemirror/lang-css");
+			languageExtension = css.css();
 			break;
 		default:
 			console.error("Unsupported file extension");
