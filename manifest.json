@@ -1,12 +1,17 @@
 {
     "id": "703c5924-3cd1-46dc-ad4b-85e9e855d691",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "platform": "all",
     "arch": "all",
     "name": "Code Editor",
     "logo": "/logo.png",
     "keywords": [
-
+        "coding", 
+        "editor",
+        "python",
+        "rust",
+        "java",
+        "javascript"
     ],
     "devTools": true,
     "preview": {
