@@ -1,9 +1,9 @@
 {
     "id": "703c5924-3cd1-46dc-ad4b-85e9e855d691",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "platform": "all",
     "arch": "all",
-    "name": "Code Editor",
+    "name": "{{manifest.app.name}}",
     "logo": "/logo.png",
     "keywords": [
         "coding", 
@@ -13,6 +13,8 @@
         "java",
         "javascript"
     ],
+    "fallbackLanguage": "en",
+	"languages": ["en", "zh_TW", "zh_CN", "ja_JP", "es_ES", "ru_RU", "de_DE", "ko_KR"],
     "devTools": true,
     "preview": {
         "py,rs,java,js": {
