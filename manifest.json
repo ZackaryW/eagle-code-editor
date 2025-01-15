@@ -1,6 +1,6 @@
 {
     "id": "703c5924-3cd1-46dc-ad4b-85e9e855d691",
-    "version": "1.1.3",
+    "version": "1.2.0",
     "platform": "all",
     "arch": "all",
     "name": "{{manifest.app.name}}",
@@ -17,7 +17,7 @@
 	"languages": ["en", "zh_TW", "zh_CN", "ja_JP", "es_ES", "ru_RU", "de_DE", "ko_KR"],
     "devTools": true,
     "preview": {
-        "py,rs,java,js,css,sql,xml,yaml,json,yml,ts": {
+        "py,rs,java,js,css,sql,xml,yaml,json,yml,ts,c,cpp": {
             "viewer": {
                 "path": "src/viewer.html"
             }

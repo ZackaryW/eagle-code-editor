@@ -39,6 +39,10 @@ async function loadEditor(filePath) {
 			const css = require("@codemirror/lang-css");
 			languageExtension = css.css();
 			break;
+		case "c" || "cpp":
+			const cpp = require("@codemirror/lang-cpp");
+			languageExtension = cpp.cpp();
+			break;
 		default:
 			console.error("Unsupported file extension");
 			return;

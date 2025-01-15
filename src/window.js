@@ -73,6 +73,14 @@ document.getElementById("create-json").addEventListener("click", async () => {
     await createFile("unnamed.json");
 });
 
+document.getElementById("create-c").addEventListener("click", async () => {
+    await createFile("unnamed.c");
+});
+
+document.getElementById("create-cpp").addEventListener("click", async () => {
+    await createFile("unnamed.cpp");
+});
+
 const codespaceFile = path.join(path.dirname(eagle.plugin.path), "templates", "template.code-workspace");
 
 // Function to create a new codespace

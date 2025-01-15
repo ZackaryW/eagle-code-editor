@@ -10,6 +10,7 @@
   "description": "",
   "dependencies": {
     "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/lang-cpp": "^6.0.2",
     "@codemirror/lang-css": "^6.3.1",
     "@codemirror/lang-java": "^6.0.1",
     "@codemirror/lang-javascript": "^6.2.2",
