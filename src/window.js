@@ -27,9 +27,11 @@ async function createFile(fileName) {
     console.log(templateDir);
     const templateFile = path.join(templateDir, fileName);
     const currFolder = await eagle.folder.getSelected();
-    await eagle.item.addFromPath(templateFile, {
+    const currFolderIds = currFolder.map(folder => folder.id);
+    await fs.promises.copyFile(templateFile, path.join(eagle.os.tmpdir(), fileName));
+    await eagle.item.addFromPath(path.join(eagle.os.tmpdir(), fileName), {
         name: fileName,
-        folders :currFolder
+        folders: currFolderIds
     });
     console.log(`Created file: ${fileName}`);
 }
