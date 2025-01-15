@@ -31,7 +31,8 @@ async function loadEditor(filePath) {
 			const xml = require("@codemirror/lang-xml");
 			languageExtension = xml.xml();
 			break;
-		case "yaml" || "yml":
+		case "yaml":
+		case "yml":
 			const yaml = require("@codemirror/lang-yaml");
 			languageExtension = yaml.yaml();
 			break;
@@ -39,7 +40,8 @@ async function loadEditor(filePath) {
 			const css = require("@codemirror/lang-css");
 			languageExtension = css.css();
 			break;
-		case "c" || "cpp":
+		case "c":
+		case "cpp":
 			const cpp = require("@codemirror/lang-cpp");
 			languageExtension = cpp.cpp();
 			break;
