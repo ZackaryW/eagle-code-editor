@@ -116,12 +116,23 @@ async function importCodespace() {
         const itemPath = path.dirname(item[0].filePath);
         console.log(itemPath);
 
-        for (const file of fs.readdirSync(folderPath)) {
-            const origin = path.join(folderPath, file);
-            console.log(`Copying ${file} from ${origin} to ${itemPath}`);
-            // Assuming you have a method to copy files
-            await fs.promises.copyFile(origin, path.join(itemPath, file));
-        }
+        await fs.cp(folderPath, itemPath, { recursive: true }, async (err) => {
+            if (err) {
+                console.error('Error copying files:', err);
+                await eagle.dialog.showMessageBox({
+                    type: 'error',
+                    message: 'Error copying files',
+                    detail: err.message
+                }); 
+            } else {
+                console.log('Files copied successfully');
+                await eagle.dialog.showMessageBox({
+                    type: 'info',
+                    message: 'Files copied successfully',
+                });
+            }
+        });
+
     } catch (error) {
         console.error('Error importing codespace:', error);
     }
