@@ -82,7 +82,7 @@ async function createCodespace(name = "unnamed.code-workspace") {
 
     // create a copy of the codespace file
     const codespaceFileCopy = path.join(eagle.os.tmpdir(), "template.code-workspace");
-    await fs.copyFile(codespaceFile, codespaceFileCopy);
+    await fs.promises.copyFile(codespaceFile, codespaceFileCopy);
 
     const item = await eagle.item.addFromPath(codespaceFileCopy, {
         name: name,
