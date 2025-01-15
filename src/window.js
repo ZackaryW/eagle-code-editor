@@ -75,10 +75,16 @@ const codespaceFile = path.join(path.dirname(eagle.plugin.path), "templates", "t
 
 // Function to create a new codespace
 async function createCodespace(name = "unnamed.code-workspace") {
+    // NOTE for some reason, the codespace file is getting moved when not in the development environment
+    // so we need to create a copy of the codespace file before adding it to the folder
     const currFolder = await eagle.folder.getSelected();
     const currFolderIds = currFolder.map(folder => folder.id);
-    console.log(codespaceFile);
-    const item = await eagle.item.addFromPath(codespaceFile, {
+
+    // create a copy of the codespace file
+    const codespaceFileCopy = path.join(eagle.os.tmpdir(), "template.code-workspace");
+    await fs.copyFile(codespaceFile, codespaceFileCopy);
+
+    const item = await eagle.item.addFromPath(codespaceFileCopy, {
         name: name,
         folders: currFolderIds
     });
