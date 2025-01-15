@@ -76,11 +76,11 @@ const codespaceFile = path.join(path.dirname(eagle.plugin.path), "templates", "t
 // Function to create a new codespace
 async function createCodespace(name = "unnamed.code-workspace") {
     const currFolder = await eagle.folder.getSelected();
-    console.log(currFolder);
+    const currFolderIds = currFolder.map(folder => folder.id);
     console.log(codespaceFile);
     const item = await eagle.item.addFromPath(codespaceFile, {
         name: name,
-        folders: currFolder
+        folders: currFolderIds
     });
     console.log(`Created codespace: ${name}`);
     return item;
