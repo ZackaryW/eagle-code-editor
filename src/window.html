@@ -12,9 +12,24 @@
             width: 100%;
             padding: 20px; /* Add padding around the button container */
         }
+        /* Overlay styles */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+            display: none; /* Hidden by default */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Ensure it covers everything */
+        }
     </style>
 </head>
 <body>
+    <div id="overlay"> <!-- Overlay element -->
+    </div>
     <div id="button-container" class="d-flex flex-column">
         <div class="d-flex flex-row">
             <button id="create-js" class="btn btn-primary btn-xs mr-2">JS</button>
@@ -32,8 +47,7 @@
         <button id="import-hard-codespace" class="btn btn-secondary btn-lg mb-3">Import Hard Codespace</button>
         <button id="import-soft-codespace" class="btn btn-secondary btn-lg mb-3">Import Soft Codespace</button>
     </div>
-    <script src="window.js">
-    </script>
+    <script src="window.js"></script>
 </body>
 </html>
 

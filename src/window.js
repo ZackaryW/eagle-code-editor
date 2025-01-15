@@ -94,6 +94,9 @@ document.getElementById("create-codespace").addEventListener("click", async () =
 // Function to import a codespace
 async function importCodespace() {
     try {
+        // Show the overlay to prevent user interaction
+        document.getElementById('overlay').style.display = 'flex';
+
         // Open a folder selection dialog using showOpenDialog
         let result = await eagle.dialog.showOpenDialog({
             properties: ['openDirectory'] // Allow selecting directories
@@ -101,6 +104,7 @@ async function importCodespace() {
 
         if (result.canceled) {
             console.log('Dialog was canceled');
+            document.getElementById('overlay').style.display = 'none'; // Hide overlay
             return; // Exit if the dialog was canceled
         }
 
@@ -111,12 +115,15 @@ async function importCodespace() {
         const item = await eagle.item.getByIds([itemID]);
         if (item.length === 0) {
             console.log("Item not found");
+            document.getElementById('overlay').style.display = 'none'; // Hide overlay
             return;
         }
         const itemPath = path.dirname(item[0].filePath);
         console.log(itemPath);
 
         await fs.cp(folderPath, itemPath, { recursive: true }, async (err) => {
+            // Hide overlay after copying is done
+            document.getElementById('overlay').style.display = 'none'; // Hide overlay
             if (err) {
                 console.error('Error copying files:', err);
                 await eagle.dialog.showMessageBox({
@@ -135,6 +142,7 @@ async function importCodespace() {
 
     } catch (error) {
         console.error('Error importing codespace:', error);
+        document.getElementById('overlay').style.display = 'none'; // Hide overlay on error
     }
 }
 
